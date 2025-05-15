@@ -1,0 +1,13 @@
+<mvc:View controllerName="org.indexit.in.supplierproject.controller.supplier"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List id="_IDGenList" noDataText="No Data Available!" items='{/ProductSet}'>
+                	<StandardListItem id="_IDGenStandardListItem"
+			title="{Name}"
+    description="{ProductID}"/>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
