@@ -1,13 +1,22 @@
 <mvc:View controllerName="org.indexit.in.supplierproject.controller.supplier"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="{i18n>view1}" >
         <content>
-            <List id="_IDGenList" noDataText="No Data Available!" items='{/ProductSet}'>
+          
+            <List id="_IDGenList" noDataText="No Data Available!" items='{/ProductSet}'  itemPress="onItemPress" mode="SingleSelect">
                 	<StandardListItem id="_IDGenStandardListItem"
-			title="{Name}"
-    description="{ProductID}"/>
+			title="{ProductID}"
+    description="{Name}" type="Active" />
             </List>
         </content>
+        <footer>
+            <Bar  design="Footer">
+                <contentLeft >
+                    <Button id="navBtn" press="onNav" text="{i18n>btnText}"/>
+                </contentLeft>
+                
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>

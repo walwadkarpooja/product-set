@@ -44,7 +44,7 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "dependencies": {
       "minUI5Version": "1.84.14",
       "libs": {
@@ -93,6 +93,13 @@
           "target": [
             "Targetsupplier"
           ]
+        },
+        {
+          "name": "Routesupplier2",
+          "pattern" : "Routesupplier2/{prodId}",
+          "target": [
+            "Targetsupplier2"
+          ]
         }
       ],
       "targets": {
@@ -102,6 +109,13 @@
           "clearControlAggregation": false,
           "viewId": "supplier",
           "viewName": "supplier"
+        },
+        "Targetsupplier2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "supplier2",
+          "viewName": "supplier2"
         }
       }
     },

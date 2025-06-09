@@ -1,0 +1,27 @@
+<mvc:View controllerName="org.indexit.in.supplierproject.controller.supplier2" 
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>view2}" navButtonPress="onBack" showNavButton="true">
+        <content>
+        <Panel id="_IDGenPanel" headerText="Product Info">
+            <form:SimpleForm id="_IDGenSimpleForm">
+                <form:content>
+                    <Label id="_IDGenLabel" text="ID"/>
+                    <Input id="_IDGenInput" editable="false"/>
+                </form:content>
+            </form:SimpleForm>
+        </Panel>
+        </content>
+        
+        <footer>
+            <Bar id="_IDGenBar" design="Footer" >
+                <contentLeft >
+                    <Button  id="navBtn2" press="onBack" text="{i18n>btnText2}"/>
+                </contentLeft>
+                
+            </Bar>
+        </footer>
+    </Page>
+
+</mvc:View>
